@@ -1,0 +1,51 @@
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="title">This is a Survey Form</h1> <!--User story #1 (id="title")-->
+    <p id="description" class="title description">Please complete the following fields</p> <!--User story #2 (id="description")-->
+  </header>
+  <form id="survey-form"> <!--User story #3 (id="survey-form")-->
+    <div class="form-fields">
+      <label id="email-label" for="email">E-mail*</label> <!--User story #5 (id="email")-->
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your email"
+        required
+      /> <!--User story #6 (HTML5 validation thanks to using type="email")-->
+    </div>
+    <div class="form-fields">
+      <label id="name-label" for="name">Name*</label> <!--User story #4 (id="name")-->
+      <input
+        type="text"
+        name="name"
+        id="name" 
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-fields">
+      <label id="number-label" for="number">Age<span class="clue">(Optional)</span></label> <!--User story #7 (id="number")-->
+      <input
+        type="number"
+        name="age"
+        id="number"
+        min="13"
+        max="122"
+        class="form-control"
+        placeholder="Enter your name"
+      /> <!--User story #8 (HTML5 validation thanks to using type="number")-->
+         <!--User story #9 (HTML5 validation thanks to defining min & max attributes)-->
+    </div>
+    <!--User story #10 (Labels, id="name-label", id="email-label" & id="number-label")-->
+    <!--User story #11 (Placeholder text for name, email & number fields)-->
+    <div class="form-fields">
+      <p>Select your country</p>
+      <select id="dropdown" name="country" class="form-control" required> <!--User story #12 (id="dropdown")-->
+        <option disabled selected value>Select the country where you live</option>
+      </select>
+    </div>
+  </form>
+</div>
