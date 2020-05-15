@@ -27,7 +27,7 @@
       />
     </div>
     <div class="form-fields">
-      <label id="number-label" for="number">Age<span class="clue"> (Optional)</span></label> <!--User story #7 (id="number")-->
+      <label id="number-label" for="number">Age</label> <!--User story #7 (id="number")-->
       <input
         type="number"
         name="age"
@@ -35,17 +35,143 @@
         min="13"
         max="122"
         class="form-control"
-        placeholder="Enter your name"
+        placeholder="..."
       /> <!--User story #8 (HTML5 validation thanks to using type="number")-->
          <!--User story #9 (HTML5 validation thanks to defining min & max attributes)-->
     </div>
     <!--User story #10 (Labels, id="name-label", id="email-label" & id="number-label")-->
     <!--User story #11 (Placeholder text for name, email & number fields)-->
     <div class="form-fields">
-      <p>Select your country</p>
-      <select id="dropdown" name="country" class="form-control" required> <!--User story #12 (id="dropdown")-->
-        <option disabled selected value>Select the country where you live</option>
+      <p>Select your gender</p>
+      <select id="dropdown" name="gender" class="form-control" required> <!--User story #12 (id="dropdown")-->
+        <option disabled selected value>...</option>
+        <option>Woman</option>
+        <option>Man</option>
+        <option>Non-binary</option>
+        <option>Prefer not to answer</option>
       </select>
+    </div>
+    <div class="form-fields">
+      <p>Do you enjoy bacon?</p>
+      <label>
+        <input
+          name="user-likes"
+          value="sure"
+          type="radio"
+          class="input-radio"
+          checked
+        />Sure I do!</label>
+      <label>
+        <input
+          name="user-likes"
+          value="course"
+          type="radio"
+          class="input-radio"
+        />Of course!</label>
+      <label>
+        <input
+          name="user-likes"
+          value="not-like"
+          type="radio"
+          class="input-radio"
+        />What's not to like?</label> <!--User story #13 (Use of name attribute)-->
+    </div>
+    <div class="form-fields">
+      <p>
+        Bacon makes all these taste better...
+        <span class="clue">(Check all that apply)</span>
+      </p>
+      <label>
+        <input
+          name="prefer"
+          value="eggs"
+          type="checkbox"
+          class="input-checkbox"
+        />Eggs</label>
+      <label>
+        <input
+          name="prefer"
+          value="burgers"
+          type="checkbox"
+          class="input-checkbox"
+        />Burgers</label>
+      <label>
+        <input
+          name="prefer"
+          value="pizzas"
+          type="checkbox"
+          class="input-checkbox"
+        />Pizzas</label>
+      <label>
+        <input
+          name="prefer"
+          value="donuts"
+          type="checkbox"
+          class="input-checkbox"
+        />Donuts</label>
+      <label>
+        <input
+          name="prefer"
+          value="potatoes"
+          type="checkbox"
+          class="input-checkbox"
+        />Potatoes</label>
+      <label>
+        <input
+          name="prefer"
+          value="sandwiches"
+          type="checkbox"
+          class="input-checkbox"
+        />Sandwiches</label>
+      <label>
+        <input
+          name="prefer"
+          value="beef"
+          type="checkbox"
+          class="input-checkbox"
+        />Beef</label>
+      <label>
+        <input
+          name="prefer"
+          value="chicken"
+          type="checkbox"
+          class="input-checkbox"
+        />Chicken</label>
+      <label>
+        <input
+          name="prefer"
+          value="fish"
+          type="checkbox"
+          class="input-checkbox"
+        />Fish</label>
+      <label>
+        <input
+          name="prefer"
+          value="pasta"
+          type="checkbox"
+          class="input-checkbox"
+        />Pasta</label>
+      <label>
+        <input
+          name="prefer"
+          value="all"
+          type="checkbox"
+          class="input-checkbox"
+        />All of the above</label> <!--User story #14 (Use of value attribute)-->
+    </div>
+    <div class="form-fields">
+      <p>Please enter your comments about bacon</p>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment about bacon here..."
+      ></textarea> <!--User story #15 (Use of textarea for comments)-->
+    </div>
+    <div class="form-fields">
+      <button type="submit" id="submit" class="submit-button"> <!--User story #16 (id="submit")-->
+        Submit
+      </button>
     </div>
   </form>
 </div>
